@@ -28,6 +28,15 @@
 !/tmp/storage/
 !/tmp/storage/.keep
 
+# Ensure /tmp/storage/ is ignored but keep .keep files
+/tmp/storage/*
+!/tmp/storage/.keep
+
+# Ensure /tmp/pids/ is ignored but keep .keep files
+/tmp/pids/*
+!/tmp/pids/.keep
+
+# Ensure /public/assets is ignored
 /public/assets
 
 # Ignore master key for decrypting credentials and more.
