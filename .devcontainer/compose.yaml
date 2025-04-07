@@ -34,20 +34,20 @@ services:
     ports:
       - 6379:6379
 
-  sidekiq:
-    build:
-      context: ..
-      dockerfile: .devcontainer/Dockerfile
+  # sidekiq:
+  #   build:
+  #     context: ..
+  #     dockerfile: .devcontainer/Dockerfile
 
-    volumes:
-    - ../..:/workspaces:cached
+  #   volumes:
+  #   - ../..:/workspaces:cached
 
-    command: bundle exec sidekiq -C config/sidekiq.yml
+  #   command: bundle exec sidekiq -C config/sidekiq.yml
 
-    # Uncomment the next line to use a non-root user for all processes.
-    # user: vscode
+  #   # Uncomment the next line to use a non-root user for all processes.
+  #   # user: vscode
 
-    depends_on:
-    - rails-app
-    - redis
+  #   depends_on:
+  #   - rails-app
+  #   - redis
   
