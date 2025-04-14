@@ -1,9 +1,0 @@
-:concurrency: 5
-:queues:
-  - default
-  - mailers
-:cron:
-  cleanup_notes:
-    cron: "0 * * * *"
-    class: CleanupNotesWorker
-    queue: default

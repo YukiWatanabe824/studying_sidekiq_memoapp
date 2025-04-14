@@ -1,3 +1,0 @@
-class Notes < ApplicationRecord
-  
-end
